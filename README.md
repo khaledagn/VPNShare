@@ -9,6 +9,7 @@ An app that enables you to run your own proxy server on your Android device and 
 </p>
 
 # Requirements
-* Max Supported Android version >= 13
+* Android Studio
+* Max Supported Android version 13
 * Min SDK version 21
 
