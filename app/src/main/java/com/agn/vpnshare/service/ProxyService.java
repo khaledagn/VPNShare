@@ -81,7 +81,7 @@ public class ProxyService extends Service {
 						Thread.sleep(500);
 					}
 				} catch (Exception e) {
-					Log.i("mohsennn Service", e.toString());
+					Log.i("khaled Service", e.toString());
 				}
 			}
 		}).start();
