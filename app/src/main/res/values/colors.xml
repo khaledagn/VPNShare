@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#ff8000</color>
+    <color name="colorPrimaryDark">#ff8000</color>
+    <color name="colorAccent">#ff8000</color>
+	<color name="image_color">#888888</color>
+	<color name="gray">#808080</color>
+	<color name="black_light">#333333</color>
+	<color name="white">#f9f9f9</color>
+	<color name="about_us_Text">#636363</color>
+	<color name="about_us_SubText">#8b8b8b</color>
+	<color name="toolbar">#ff8000</color>
+
+
+	
+</resources>

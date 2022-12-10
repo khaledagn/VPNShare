@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	
+	<group android:id="@+id/grup">
+		<item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home"/>
+	
+    	<item android:id="@+id/about"
+        	android:icon="@drawable/ic_baseline_info_24"
+        	android:title="About"/>
+	
+	</group>
+
+	
+	
+	
+</menu>

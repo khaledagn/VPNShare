@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayoutMain"
+	android:layout_height="match_parent"
+	android:background="#f9f9f9"
+	android:layout_width="match_parent"
+	android:fitsSystemWindows="true"
+	tools:openDrawer="start">
+
+
+			<androidx.appcompat.widget.Toolbar
+				android:id="@+id/toolbar_main"
+				android:theme="@style/ToolbarTheme"
+				android:background="?attr/colorPrimary"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				android:minHeight="?attr/actionBarSize"
+				app:titleTextAppearance="@style/ToolbarTitleTheme" 
+				app:subtitleTextAppearance="@style/ToolbarSubtitleTheme" 
+				app:popupTheme="@style/AppTheme.PopupOverlay">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/app_name"
+					android:layout_gravity="center"
+					android:fontFamily="@font/poppins_medium"
+					android:textColor="@color/white"
+					android:textStyle="bold"
+					android:textSize="18sp"
+					android:layout_marginTop="10dp"/>
+			</androidx.appcompat.widget.Toolbar>
+
+
+	<FrameLayout
+		android:id="@+id/frameLayout_main"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/toolbar_main"
+		app:layout_constraintBottom_toTopOf="@+id/linearLayout_main" />
+
+
+	<LinearLayout
+		android:id="@+id/linearLayout_main"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+
+
+	<com.google.android.material.bottomnavigation.BottomNavigationView
+		android:id="@+id/bottom_menu"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintBottom_toBottomOf="parent"
+		android:gravity="bottom"
+		android:background="#FFFCF7"
+		android:elevation="6dp"
+		android:padding="5dp"
+		app:menu="@menu/navigation_menu"
+	 />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

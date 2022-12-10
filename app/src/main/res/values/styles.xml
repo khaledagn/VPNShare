@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+	<declare-styleable name="MaterialButton">
+        <attr name="colorPressed" format="color" />
+        <attr name="colorNormal" format="color" />
+        <attr name="cornerRadius" format="dimension" />
+    </declare-styleable>
+	<declare-styleable name="ExpandCollapseCard">
+        <attr name="title" format="string" />
+        <attr name="title_size" format="dimension" />
+        <attr name="title_color" format="color" />
+        <attr name="title_background_color" format="color" />
+        <attr name="item_inner_view" format="reference" />
+        <attr name="expand_icon" format="reference" />
+        <attr name="collapse_icon" format="reference" />
+    </declare-styleable>
+	<style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:textSize">14sp</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="preferenceTheme">@style/AppPreference</item>
+		<item name="alertDialogTheme">@style/AppAlertDialog</item>
+		<item name="android:navigationBarColor" tools:targetApi="21">@color/colorPrimaryDark</item>
+	</style>
+	<style name="AppAlertDialog"
+        parent="Theme.AppCompat.Light.Dialog.Alert">
+	</style>
+	<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+	<style name="TabTitleTheme" 
+        parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">2.0</item>
+
+    </style>
+
+    <style name="ToolbarTitleTheme" 
+        parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+       <!-- <item name="android:textStyle">bold</item> -->
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">2.0</item>
+
+    </style>
+
+    <style name="ToolbarSubtitleTheme"
+        parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+
+    </style>
+	<style name="AppPreference"
+        parent="PreferenceThemeOverlay">
+        <item name="android:cacheColorHint">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+    <!-- Toolbar theme -->
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!-- android:textColorPrimary is the color of the title text in the Toolbar  -->
+        <item name="android:textColorPrimary">#ffffffff</item>
+        <!-- actionMenuTextColor is the color of the text of action (menu) items  -->
+        <item name="actionMenuTextColor">@android:color/holo_green_light</item>
+        <!-- Tints the input fields like checkboxes and text fields -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Applies to views in their normal state. -->
+        <item name="android:textSize">14sp</item>
+        <item name="colorControlNormal">#ffffffff</item>
+        <!-- Applies to views in their activated state (i.e checked or switches) -->
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <!-- Applied to framework control highlights (i.e ripples or list selectors) -->
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+
+        <!-- Enable these below if you want clicking icons to trigger a ripple effect -->
+        <!-- 
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+        <item name="selectableItemBackgroundBorderless">?android:selectableItemBackground</item> 
+        -->
+    </style>
+
+    
+    <!-- Alert Dialog -->
+    <style name="AppAlertDialogLogin"
+        parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--  <item name="android:textColor">@color/colorText</item>
+        <item name="android:textColorHint">@color/colorText</item>
+        <item name="buttonTint">@color/colorText</item> -->
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="TextView0" parent="@android:style/TextAppearance">
+        <item name="android:textSize">9.0sp</item>
+    </style>
+    <style name="TextView" parent="@android:style/TextAppearance">
+        <item name="android:textSize">10.0sp</item>
+    </style>
+    <style name="TextView1" parent="@android:style/TextAppearance">
+        <item name="android:textSize">12.0sp</item>
+    </style>
+    <style name="TextView2" parent="@android:style/TextAppearance">
+        <item name="android:textSize">13.0sp</item>
+    </style>
+    <style name="TextView3" parent="@android:style/TextAppearance">
+        <item name="android:textSize">17.0sp</item>
+    </style>
+    <style name="TextView4" parent="@android:style/TextAppearance">
+        <item name="android:textSize">11.0sp</item>
+    </style>
+    <style name="TextView5" parent="@android:style/TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+    </style>
+    <style name="TextView6" parent="@android:style/TextAppearance">
+        <item name="android:textSize">8.0sp</item>
+    </style>
+    <style name="TextView7" parent="@android:style/TextAppearance">
+        <item name="android:textSize">15.0sp</item>
+    </style>
+    <style name="NaviText" parent="@android:style/TextAppearance">
+        <item name="android:textSize">12.0sp</item>
+        item name="android:textColor">@drawable/nav_text/item>
+	</style>
+    
+	</resources>

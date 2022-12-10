@@ -1,2 +1,2 @@
 # VPNShare
- Share your VPN access without Root
+Share your VPN access without Rooth

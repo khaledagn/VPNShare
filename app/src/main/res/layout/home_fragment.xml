@@ -1,0 +1,220 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.agn.vpnshare.MainActivity"
+>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:paddingBottom="20dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal"
+        android:text="@string/step1"
+        android:id="@+id/step1txt"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        app:cardCornerRadius="2.0sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step1txt"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="10.0sp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/step1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+        <Button
+            android:id="@+id/WiFiTetherButton"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_back2"
+            android:textColor="#ffffff"
+            android:text="@string/wifi_tethering" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/step2"
+        android:id="@+id/step2txt"
+        app:layout_constraintTop_toBottomOf="@+id/step1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2txt"
+        app:cardCornerRadius="2.0sp"
+        app:cardElevation="10.0sp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/step2"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+        <Button
+            android:id="@+id/cb_enable"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_back2"
+            android:textColor="#ffffff"
+            android:text="@string/startvpnshare" />
+        <Button
+            android:id="@+id/cb_disable"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_back2"
+            android:textColor="#ffffff"
+            android:text="@string/stopvpnshare" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/proxyStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/step2"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/proxyURL"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/proxyStatus"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="14sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/step3"
+        android:id="@+id/step3txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/proxyURL"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        app:cardCornerRadius="2.0sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/step3txt"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="10.0sp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/steps"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+    <TextView
+        android:id="@+id/STEP1"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/step1txt"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/STEP2"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:layout_below="@id/STEP1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/step2txt"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/proxy"
+        android:layout_marginTop="83dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/ports"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/STEP3"
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/step3txt"
+        android:textSize="12sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
