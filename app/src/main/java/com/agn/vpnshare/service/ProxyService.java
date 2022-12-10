@@ -76,7 +76,7 @@ public class ProxyService extends Service {
 				try {
 					int cou=0;
 					while (true) {
-						Log.i("mohsennnn : ", "me --> " +  cou);
+						Log.i("khaled : ", "me --> " +  cou);
 						cou++;
 						Thread.sleep(500);
 					}
