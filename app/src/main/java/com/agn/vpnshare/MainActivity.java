@@ -74,7 +74,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 	@RequiresApi(api = 33)
 	private void requestPermissionNotifInfo() {
 		if (ActivityCompat.shouldShowRequestPermissionRationale(MainActivity.this, android.Manifest.permission.POST_NOTIFICATIONS)) {
-			// Dialog de informação para caso o usuário já tenha negado as permissões pelo menos uma vez
 			RequestPermissionDialogFragment dialog = RequestPermissionDialogFragment.newInstance();
 			dialog.show(getSupportFragmentManager(), dialog.getTag());
 		} else {
